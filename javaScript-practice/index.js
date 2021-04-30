@@ -22,3 +22,15 @@ arry.forEach(
 
 //問題5: 任意の変数名の[1,2]を定義して配列かどうかを評価してください e.g true
 Array.isArray([1, 2]);
+
+//問題8: keyとvalueを自身のプロパティのみ全て出力しなさい
+const obj = {
+    key: 'aa',
+    key2: 'bb'
+}
+
+for(key in obj) {
+    if(obj.hasOwnProperty(key)){
+        console.log(key, obj[key]);
+    }
+}
