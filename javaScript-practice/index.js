@@ -59,3 +59,17 @@ let arry11 =[
 arry11.sort(function(a,b){
     return a.id > b.id
 })
+
+//問題12: a, bの変数はデフォルトとしてaは5、bは7を持ち、aに1を代入してconsole出力してください。
+const [a = 5, b = 7] = [1];
+//or
+const {a = 5, b = 7} = {a: 1};
+
+//問題13: next()を実行しただけ返り値が1増える関数を定義してください
+const setUp = function() {
+    let count = 0
+    return function() {
+        return (count += 1);
+    }
+}
+const next = setUp();
