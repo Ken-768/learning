@@ -73,3 +73,9 @@ const setUp = function() {
     }
 }
 const next = setUp();
+
+//問題14: fun(1,2,3)を実行したら引数が全て配列で返る関数funを定義しなさい
+function fun() {
+    return Array.from(arguments);
+}
+fun(1, 2, 3);
