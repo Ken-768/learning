@@ -79,3 +79,7 @@ function fun() {
     return Array.from(arguments);
 }
 fun(1, 2, 3);
+
+//問題15: const array = ['a1','a2','a3','a4','a5']の0〜2番目の要素をそれぞれred, green, yellow
+const array = ['a1','a2','a3','a4','a5'];
+array.splice(0, 3, 'red', 'green','yellow');
