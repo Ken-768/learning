@@ -83,3 +83,7 @@ fun(1, 2, 3);
 //問題15: const array = ['a1','a2','a3','a4','a5']の0〜2番目の要素をそれぞれred, green, yellow
 const array = ['a1','a2','a3','a4','a5'];
 array.splice(0, 3, 'red', 'green','yellow');
+
+//問題16: const array = ['a1','a2','a3','a4','a5']のインデックス2〜4の要素を取り出し、 配列として出力しなさい。 実行された後のarrayの要素を教えてください
+const array = ['a1','a2','a3','a4','a5'];
+const newArray = array.slice(1, 4);
