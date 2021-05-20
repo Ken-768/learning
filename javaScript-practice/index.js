@@ -87,3 +87,7 @@ array.splice(0, 3, 'red', 'green','yellow');
 //問題16: const array = ['a1','a2','a3','a4','a5']のインデックス2〜4の要素を取り出し、 配列として出力しなさい。 実行された後のarrayの要素を教えてください
 const array = ['a1','a2','a3','a4','a5'];
 const newArray = array.slice(1, 4);
+
+//問17: const array = ['a1','a2','a3','a4','a5']の全ての要素を"/"で結合した文字列を出力し、さらにその文字列を'/'区切りで配列に直してください
+const array = ['a1','a2','a3','a4','a5'];
+array.join('/').split('/');
