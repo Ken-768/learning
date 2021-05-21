@@ -91,3 +91,8 @@ const newArray = array.slice(1, 4);
 //問17: const array = ['a1','a2','a3','a4','a5']の全ての要素を"/"で結合した文字列を出力し、さらにその文字列を'/'区切りで配列に直してください
 const array = ['a1','a2','a3','a4','a5'];
 array.join('/').split('/');
+
+//問18: 配列['おはよう','こんにちは','おやすみなさい']の要素がランダムに出力される関数を書いてください。(配列に要素が追加される事を仮定してたものにしてください)
+const array = ['おはよう','こんにちは','おやすみなさい'];
+const greeting = array.[Math.floor(Math.random() * array.length)];
+greeting;
