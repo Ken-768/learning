@@ -94,5 +94,5 @@ array.join('/').split('/');
 
 //問18: 配列['おはよう','こんにちは','おやすみなさい']の要素がランダムに出力される関数を書いてください。(配列に要素が追加される事を仮定してたものにしてください)
 const array = ['おはよう','こんにちは','おやすみなさい'];
-const greeting = array.[Math.floor(Math.random() * array.length)];
+const greeting = array[Math.floor(Math.random() * array.length)];
 greeting;
