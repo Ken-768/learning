@@ -96,3 +96,7 @@ array.join('/').split('/');
 const array = ['おはよう','こんにちは','おやすみなさい'];
 const greeting = array[Math.floor(Math.random() * array.length)];
 greeting;
+
+//問19: Object.createで空のオブジェクトを作成し、値が1のプロパティpを出力してください
+const obj = Object.create({}, {p : {value: 1}});
+obj.p;
