@@ -100,3 +100,15 @@ greeting;
 //問19: Object.createで空のオブジェクトを作成し、値が1のプロパティpを出力してください
 const obj = Object.create({}, {p : {value: 1}});
 obj.p;
+
+//問20: コンストラクタWhoの初期化時に'morita'(String)を渡しインスタンスプロパティnameに代入、 インスタンスメソッドgetNameの返り値がWho.prototype.name値になるいわゆる「classのようなもの」を作成してください ※インスタンスメソッドはprototypeに代入してください
+function Who(name) {
+    this.name = name;
+}
+
+Who.prototype.getName = function() {
+    console.log('Myname is ' + this.name);
+};
+
+let o = new Who('Morita');
+o.getName();
