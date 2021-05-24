@@ -112,3 +112,8 @@ Who.prototype.getName = function() {
 
 let o = new Who('Morita');
 o.getName();
+
+//問21: 実行した結果を答えてください
+let array = ['e','a','k','B','c'];
+array.sort();
+// ["B", "a", "c", "e", "k"]
