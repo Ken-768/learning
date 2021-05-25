@@ -117,3 +117,9 @@ o.getName();
 let array = ['e','a','k','B','c'];
 array.sort();
 // ["B", "a", "c", "e", "k"]
+
+//問22: 上記の配列を大文字小文字区別なく順番通りにしてください。期待する値['a','B','c', 'e','k']
+let array = ['e','a','k','B','c'];
+array.sort(function(a, b) {
+    return a.toUpperCase() > b.toUpperCase() ? 1 : -1;
+});
