@@ -123,3 +123,9 @@ let array = ['e','a','k','B','c'];
 array.sort(function(a, b) {
     return a.toUpperCase() > b.toUpperCase() ? 1 : -1;
 });
+
+//問23: [20,100,3,35,0]を比較する配列の要素が数値の場合、「降順」にsortしてください 期待する結果[100, 35, 20, 3, 0]
+let number = [20,100,3,35,0];
+number.sort(function(a, b) {
+    return b - a;
+});
