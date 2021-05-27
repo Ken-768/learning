@@ -129,3 +129,6 @@ let number = [20,100,3,35,0];
 number.sort(function(a, b) {
     return b - a;
 });
+
+//問24: 文字列 '10'をNumber型にし、型判定し、数値かどうか評価後、文字列に変換してください
+let a = parseInt('10', 10);
