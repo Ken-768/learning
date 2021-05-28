@@ -132,3 +132,15 @@ number.sort(function(a, b) {
 
 //問24: 文字列 '10'をNumber型にし、型判定し、数値かどうか評価後、文字列に変換してください
 let a = parseInt('10', 10);
+
+//問25: カーリー化されたadd(1)(2)もしくはadd(1,2) を実行した際両方とも返り値3になる関数を定義しなさい
+function add(x, y) {
+    if(typeof y == 'undefined') {
+        return function(y) {
+            return x + y;
+        }
+    }
+    return x + y;
+}
+add(1)(2);
+add(1, 2);
