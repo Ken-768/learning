@@ -144,3 +144,20 @@ function add(x, y) {
 }
 add(1)(2);
 add(1, 2);
+
+//問26: クロージャーを使ったファクトリー関数。
+//var fafa = Factory('morita');
+//fafa.introduce()
+//上記のような実行をしたら渡したname(ここではmorita)が表示されるメソッドintroduceを持つファクトリー関数を定義しなさい。
+function Factory(name) {
+    function getName() {
+        return name;
+    };
+    return {
+        introduce: function() {
+            console.log(getName());
+        }
+    }
+};
+const fafa = Factory('Morita');
+fafa.introduce();
