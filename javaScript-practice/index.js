@@ -161,3 +161,18 @@ function Factory(name) {
 };
 const fafa = Factory('Morita');
 fafa.introduce();
+
+//問27 関数sayHiに自分の名前を引数で渡した際にhello!yourname、何も渡さない場合hello! と返す関数を作成し、それをapplyで実行してください。また applyの第一引数にnullを渡す場合とオブジェクトを渡す場合のそれぞれのthisは何を指しますか答えてください
+let sayHi = function() {
+    return 'hello' + (name ? name : '');
+}
+sayHi('Kenji');
+sayHi();
+sayHi.apply(null, ['kenji']);
+let greeting = {
+    sayHi: function(name) {
+        return 'hello' + (name ? name : '');
+    }
+};
+greeting.sayHi.apply(greeting, ['kenji']);
+greeting.sayHi.apply(greeting);
