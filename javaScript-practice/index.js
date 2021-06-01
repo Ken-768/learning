@@ -176,3 +176,9 @@ let greeting = {
 };
 greeting.sayHi.apply(greeting, ['kenji']);
 greeting.sayHi.apply(greeting);
+
+//問28: このobjをプロパティ追加不可、削除変更は可能にし、プロパティ追加不可か否かの判定メソッドでtrueが返る事を確認した後、objのkeyを列挙してください。
+let obj = {x : 2, y: 3};
+Object.preventExtensions(obj);
+Object.isExtensible(obj);
+Object.keys(obj);
