@@ -182,3 +182,5 @@ let obj = {x : 2, y: 3};
 Object.preventExtensions(obj);
 Object.isExtensible(obj);
 Object.keys(obj);
+//問29: let obj = {} と等価をObjctメソッドで生成してください
+Object.create(Object.prototype);
