@@ -182,5 +182,12 @@ let obj = {x : 2, y: 3};
 Object.preventExtensions(obj);
 Object.isExtensible(obj);
 Object.keys(obj);
+
 //問29: let obj = {} と等価をObjctメソッドで生成してください
 Object.create(Object.prototype);
+
+//問30: let obj = {x : 2, y: 3}と等価をObjectメソッドで生成してください
+let obj = Object.create(Object.prototype, {
+    x : {value: 2},
+    y : {value: 3}
+})
