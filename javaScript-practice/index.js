@@ -191,3 +191,7 @@ let obj = Object.create(Object.prototype, {
     x : {value: 2},
     y : {value: 3}
 })
+
+//問31: const obj = { x : 2}の属性を出力してください
+const obj = { x : 2}
+Object.getOwnPropertyDescriptor(obj, 'x');
