@@ -195,3 +195,8 @@ let obj = Object.create(Object.prototype, {
 //問31: const obj = { x : 2}の属性を出力してください
 const obj = { x : 2}
 Object.getOwnPropertyDescriptor(obj, 'x');
+
+//問31: こちら var obj2 = {x : 2};にObjectメソッドを用いてプロパティy、値2、プロパティ追加可能を定義して、Objectメソッドで情報(値と属性)を返してください
+let obj2 = {x : 2};
+Object.defineProperties(obj2, 'y', {value: 3, enumerable: true});
+Object.getOwnPropertyDescriptor(obj2, 'y');
