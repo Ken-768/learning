@@ -207,3 +207,11 @@ function f() {
     console.log(arguments[0]);
 }
 f(2);
+
+//問33: let arr = ['2','23','0','16'];を小さい順にソートしてください。その後ソートをできないようにread-onlyにしてください
+let arr = ['2','23','0','16'];
+arr.sort(function(a, b) {
+    return a - b;
+});
+Object.freeze(arr);
+arr.sort();
