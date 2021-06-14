@@ -222,3 +222,12 @@ let arr2 = arr.slice(0, arr.length);
 arr2[0] = 123;
 arr;
 arr2;
+
+//問35: const getSum = (a, b) => a + b; このパラメーターに何もわたってこなかった場合Errorをスローすようにしてください 期待する結果 getSum(10) //throws b is not defined getSum(undefined, 10) //throws a is not defined
+const _err = function(message) {
+    throw new Error(message);
+}
+const getSum = (a = _err('a is not defined'), b = _err('b is not defined')) => a + b
+getSum(10);
+getSum(undefined, 10);
+getSum(10, 20);
