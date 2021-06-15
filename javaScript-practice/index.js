@@ -231,3 +231,6 @@ const getSum = (a = _err('a is not defined'), b = _err('b is not defined')) => a
 getSum(10);
 getSum(undefined, 10);
 getSum(10, 20);
+
+//問38: DOM上にあるdivをnodeListに変換して配列に格納してください
+const nodelist = [...document.querySelectorAll('div')];
