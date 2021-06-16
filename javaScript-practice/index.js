@@ -234,3 +234,9 @@ getSum(10, 20);
 
 //問38: DOM上にあるdivをnodeListに変換して配列に格納してください
 const nodelist = [...document.querySelectorAll('div')];
+
+//問39 配列var arr = ['f','o','x','k'];をインデックス順に出力させてください
+var arr = ['f','o','x','k'];
+arr.forEach(i => {
+    console.log(i);
+});
