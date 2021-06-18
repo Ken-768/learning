@@ -248,3 +248,8 @@ eArr.next().value;
 eArr.next().value;
 eArr.next().value;
 eArr.next().value;
+
+//問41: 配列['a', 'b', 'c', 'd', 'e'] のインデックス2番目に'morita'という要素を加えなさい。期待する結果['a', 'b','morita', 'c', 'd', 'e']
+let array = ['a', 'b', 'c', 'd', 'e'];
+array.splice(2, 0, 'morita');
+array;
