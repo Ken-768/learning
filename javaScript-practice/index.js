@@ -253,3 +253,6 @@ eArr.next().value;
 let array = ['a', 'b', 'c', 'd', 'e'];
 array.splice(2, 0, 'morita');
 array;
+
+//問42: var o = {};と同じ意味を持つコードをObjectのAPIを使って生成してください
+let o = Object.create(Object.prototype);
