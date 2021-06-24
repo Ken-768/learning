@@ -256,3 +256,6 @@ array;
 
 //問42: var o = {};と同じ意味を持つコードをObjectのAPIを使って生成してください
 let o = Object.create(Object.prototype);
+
+//問43: {p: 42}となるようなオブジェクトをObjectメンバを使って生成してください
+let o = Object.create({}, {p: {value: 42}});
