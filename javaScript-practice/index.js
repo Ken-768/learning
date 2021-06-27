@@ -259,3 +259,11 @@ let o = Object.create(Object.prototype);
 
 //問43: {p: 42}となるようなオブジェクトをObjectメンバを使って生成してください
 let o = Object.create({}, {p: {value: 42}});
+
+//問44: 1234という数字を文字列に変更後、配列の要素としてインデックス順に格納してください
+let count = 1234;
+let ee = count.toString();
+let arr = [];
+for(let i = 0; i < ee.length; i++) {
+    arr[i] = ee.charAt(i);
+}
