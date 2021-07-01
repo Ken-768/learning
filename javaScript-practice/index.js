@@ -267,3 +267,20 @@ let arr = [];
 for(let i = 0; i < ee.length; i++) {
     arr[i] = ee.charAt(i);
 }
+arr;
+
+//問45: こちらは要素が2だったらループを抜けたいのだが期待どうり動かない 期待する出力 //0, 1
+// [0, 1, 2, 3, 4].forEach(function(val, i) {
+//     if (val === 2) {
+//       // how do we stop?
+//       return true;
+//     }
+//     console.log(val);
+//   });
+
+[0, 1, 2, 3, 4].some(function(val, i) {
+    if (val === 2) {
+    return true;
+    }
+    console.log(val); // your code
+});
