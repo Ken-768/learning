@@ -284,3 +284,21 @@ arr;
     }
     console.log(val); // your code
 });
+
+//問46
+let Speaker = {
+    say : function(wordGetter) {
+        let words = wordGetter();
+        alert(words);
+    }
+};
+function Person(nickname) {
+    this.nickname = nickname;
+}
+Person.prototype.sayName = function() {
+    Speaker.say(function(){
+        return this.nickname;
+    }.bind(this));
+}
+let person = new Person('moriken');
+person.sayName();
