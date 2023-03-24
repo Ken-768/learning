@@ -28,3 +28,7 @@ person.sayName();
 const aboveTen = (currentValue) => currentValue >= 10;
 const passed = [10, 6, 7, 120, 12];
 console.log(passed.every(aboveTen));
+
+const mail = [['1', 'info@a'], ['2', 'info@b'], ['3', 'info@c']];
+const map = new Map(mail);
+map.set('4', 'info@d');
